@@ -95,11 +95,20 @@ $ kubectl delete secret <secret_name>
 
 # SERVICES
 1. List the services
-$ kubectl get services
+**$ kubectl get services**
 2. View the detailed state of a service
-$ kubectl describe services <name>
-3. Expose a replication controller, deployment or
-pod as a new Kubernetes service
-$ kubectl expose deployment [deployment_name]
+**$ kubectl describe services <name>**
+3. Expose a replication controller, deployment or pod as a new Kubernetes service
+**$ kubectl expose deployment [deployment_name]**
 4. Edit/update the definition of a service
-$ kubectl edit service <name>
+**$ kubectl edit service <name>**
+
+# COMMON OPTIONAL FLAGS
+1. –o Format of output. (Suppose you wanted to list all of the pods in ps output format with additional information.)
+**$ kubectl get pods -o wide**
+2. Create any resource(pod/replicaset/deployment, etc) using a yaml/json file.
+**$ kubectl apply -f <xyz.yaml>**
+3. dry run:
+**$ kubectl apply -f <xyz.yaml> --dry-run=client**
+3. dry run + yaml format: 
+**$ kubectl apply -f <xyz.yaml> --dry-run=client -o yaml**
