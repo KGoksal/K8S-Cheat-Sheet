@@ -13,7 +13,6 @@ the server and client
 **$ kubectl get all --all-namespaces** / kubectl get all -A
 
 # NODE MANAGEMENT
-
 ### 1. List the nodes
 **$ kubectl get node**
 ### 2. Update the taints on nodes
