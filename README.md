@@ -81,7 +81,6 @@ $ kubectl scale deployment <deployment-name> --
 replicas=<number-of-replicas>
 
 # SECRETS
-
 ### 1. Create a secret
 $ kubectl create secret <name>
 ### 2. List secrets
