@@ -1,5 +1,4 @@
 # CLUSTER MANAGEMENT
-
 ### 1. Display endpoint details for the cluster’s master and services.
 **$ kubectl cluster-info**
 ### 2. Show the Kubernetes version that is active on
