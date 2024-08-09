@@ -89,7 +89,6 @@ $ kubectl describe secrets <name>
 ### 4. Delete a secret
 $ kubectl delete secret <secret_name>
 
-
 # SERVICES
 ### 1. List the services
 **$ kubectl get services**
